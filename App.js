@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Button, StyleSheet, View} from 'react-native';
-// import ToastExample from './ToastExample';
+import ToastModule from './ToastModule';
 import CallbackTestModule from './CallbackTestModule';
 
 export default class ButtonBasics extends Component {
@@ -10,7 +10,7 @@ export default class ButtonBasics extends Component {
       1000,
       msg => {
         console.log('Native回调给JS' + msg);
-        //ToastExample.show(msg, ToastExample.SHORT);
+        ToastModule.show(msg, ToastModule.SHORT);
       },
       (x, y, a, b) => {
         if (x === 6666) {
@@ -59,10 +59,7 @@ export default class ButtonBasics extends Component {
               b,
           );
         }
-        // ToastExample.show(
-        //   relativeX + ':' + relativeY + ':' + width + ':' + height,
-        //   ToastExample.SHORT,
-        // );
+        ToastModule.show(x + ':' + x + ':' + a + ':' + b, 1);
       },
     );
   }
@@ -71,7 +68,10 @@ export default class ButtonBasics extends Component {
     return (
       <View style={styles.container}>
         <View style={styles.buttonContainer}>
-          <Button onPress={this._onPressButton} title="Press Me" />
+          <Button
+            onPress={this._onPressButton}
+            title="Js调用Native,Native回调结果给Js,Js再次调用Native的Toast,将数据显示出来"
+          />
         </View>
         <View style={styles.buttonContainer}>
           <Button
