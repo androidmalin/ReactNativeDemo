@@ -11,7 +11,7 @@ import java.util.List;
 
 import javax.annotation.Nonnull;
 
-public class CustomToastPackage implements ReactPackage {
+public class CustomReactPackage implements ReactPackage {
     @Nonnull
     @Override
     public List<NativeModule> createNativeModules(@Nonnull ReactApplicationContext reactContext) {

@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
+    <!--  usesCleartextTraffic Android P的系统上面默认所有Http的请求都被阻止了。true表示解除禁止  -->
     <application
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning"
