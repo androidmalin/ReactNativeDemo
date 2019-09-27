@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Button, StyleSheet, View} from 'react-native';
-import ToastExample from './ToastExample';
+// import ToastExample from './ToastExample';
 import CallbackTestModule from './CallbackTestModule';
 
 export default class ButtonBasics extends Component {
@@ -9,15 +9,60 @@ export default class ButtonBasics extends Component {
       100,
       1000,
       msg => {
-        console.log(msg);
-        ToastExample.show(msg, ToastExample.SHORT);
+        console.log('Native回调给JS' + msg);
+        //ToastExample.show(msg, ToastExample.SHORT);
       },
-      (relativeX, relativeY, width, height) => {
-        console.log(relativeX + ':' + relativeY + ':' + width + ':' + height);
-        ToastExample.show(
-          relativeX + ':' + relativeY + ':' + width + ':' + height,
-          ToastExample.SHORT,
-        );
+      (x, y, a, b) => {
+        if (x === 6666) {
+          console.log(
+            'Android Native回调给JS' +
+              'x:' +
+              x +
+              ' ' +
+              'y:' +
+              y +
+              ' ' +
+              'a:' +
+              a +
+              ' ' +
+              'b:' +
+              b,
+          );
+        } else if (x === 7777) {
+          console.log(
+            'iOS Native回调给JS' +
+              'x:' +
+              x +
+              ' ' +
+              'y:' +
+              y +
+              ' ' +
+              'a:' +
+              a +
+              ' ' +
+              'b:' +
+              b,
+          );
+        } else {
+          console.log(
+            '未知 Native 回调给JS' +
+              'x:' +
+              x +
+              ' ' +
+              'y:' +
+              y +
+              ' ' +
+              'a:' +
+              a +
+              ' ' +
+              'b:' +
+              b,
+          );
+        }
+        // ToastExample.show(
+        //   relativeX + ':' + relativeY + ':' + width + ':' + height,
+        //   ToastExample.SHORT,
+        // );
       },
     );
   }
