@@ -8,7 +8,6 @@
 
 #import "ToastModule.h"
 #import <WHToast.h>
-#import <UIView+Toast.h>
 
 @implementation ToastModule
 
