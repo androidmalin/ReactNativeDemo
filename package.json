@@ -11,8 +11,7 @@
   },
   "dependencies": {
     "react": "16.9.0",
-    "react-native": "0.61.1",
-    "ws": ">=3.3.1"
+    "react-native": "0.61.1"
   },
   "devDependencies": {
     "ws": ">=3.3.1",
