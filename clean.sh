@@ -5,7 +5,7 @@ rm -rf ios/Pods && \
 rm -rf android/.gradle && \
 rm -rf android/app/build && \
 yarn cache clean && \
-npm install  && \
+yarn install  && \
 cd ios  && \
 pod install  && \
 cd ..
