@@ -10,11 +10,10 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "react": "16.9.0",
+    "react": "16.10.1",
     "react-native": "0.61.1"
   },
   "devDependencies": {
-    "ws": ">=3.3.1",
     "@babel/core": "^7.6.2",
     "@babel/runtime": "^7.6.2",
     "@react-native-community/eslint-config": "^0.0.5",
@@ -22,7 +21,8 @@
     "eslint": "^6.4.0",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.56.0",
-    "react-test-renderer": "16.9.0"
+    "react-test-renderer": "16.10.1",
+    "ws": ">=3.3.1"
   },
   "jest": {
     "preset": "react-native"
