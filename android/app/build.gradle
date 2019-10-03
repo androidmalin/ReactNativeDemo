@@ -136,7 +136,8 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
-        android.ndkVersion "16.1.4479499"
+        // sdk/ndk
+        android.ndkVersion "20.0.5594570"
     }
     splits {
         abi {
@@ -163,6 +164,15 @@ android {
             keyAlias 'testtest'
             keyPassword 'testtest'
         }
+    }
+
+    packagingOptions {
+        pickFirst '**/armeabi-v7a/libc++_shared.so'
+        pickFirst '**/x86/libc++_shared.so'
+        pickFirst '**/arm64-v8a/libc++_shared.so'
+        pickFirst '**/x86_64/libc++_shared.so'
+        pickFirst '**/x86/libjsc.so'
+        pickFirst '**/armeabi-v7a/libjsc.so'
     }
 
     packagingOptions {
