@@ -217,7 +217,7 @@ PODS:
     - React-cxxreact (= 0.61.1)
     - React-jsi (= 0.61.1)
     - ReactCommon/jscallinvoker (= 0.61.1)
-  - WHToast (0.0.2)
+  - WHToast (0.0.3)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -252,7 +252,7 @@ DEPENDENCIES:
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - boost-for-react-native
     - WHToast
 
@@ -334,7 +334,7 @@ SPEC CHECKSUMS:
   React-RCTText: 81b62b4e7f11531a5154e4daa5617670d5a2d5de
   React-RCTVibration: 8be61459e3749d1fb02cf414edd05b3007622882
   ReactCommon: 4fba5be89efdf0b5720e0adb3d8d7edf6e532db0
-  WHToast: b5b1c6c2a178b2e848e7416fd25ca6b25c7babf8
+  WHToast: 30d7f1734ff57b391da4050fab13a2af0e95638c
   Yoga: d8c572ddec8d05b7dba08e4e5f1924004a177078
 
 PODFILE CHECKSUM: a73c7d4ecb8edb51abebdbe7ae05a87064b34b0d
