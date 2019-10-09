@@ -19,6 +19,7 @@ public class CustomReactPackage implements ReactPackage {
         // 注册这个模块;如果模块没有被注册，它也无法在 JavaScript 中被访问到
         modules.add(new ToastModule(reactContext));
         modules.add(new CallbackTestModule(reactContext));
+        modules.add(new PromiseModule(reactContext));
         return modules;
     }
 

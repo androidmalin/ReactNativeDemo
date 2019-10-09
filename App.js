@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Button, StyleSheet, View} from 'react-native';
 import ToastModule from './ToastModule';
 import CallbackTestModule from './CallbackTestModule';
+import PromiseModule from './PromiseModule';
 
 export default class ButtonBasics extends Component {
   _onPressButton() {
@@ -59,6 +60,8 @@ export default class ButtonBasics extends Component {
               b,
           );
         }
+        promiseModuleFunction();
+        promiseModuleFunction2();
         ToastModule.show(x + ':' + x + ':' + a + ':' + b, 1);
       },
     );
@@ -86,6 +89,27 @@ export default class ButtonBasics extends Component {
         </View>
       </View>
     );
+  }
+}
+
+function promiseModuleFunction() {
+  PromiseModule.numberTransferFunction('1', '2')
+    .then(e => {
+      console.log('JSLOG:' + 'x:' + e.x + ',y:' + e.y);
+    })
+    .catch(error => {
+      console.error('JSLOG:' + 'catch error:' + e);
+    });
+}
+
+//async表示函数里有异步操作，await表示紧跟在后面的表达式需要等待结果。
+//http://es6.ruanyifeng.com/#docs/async
+async function promiseModuleFunction2() {
+  try {
+    var {x, y} = await PromiseModule.numberTransferFunction('1', '2');
+    console.log('JSLOG2:' + 'x:' + x + ',y:' + y);
+  } catch (e) {
+    console.error('JSLOG2:' + 'catch error:' + e);
   }
 }
 

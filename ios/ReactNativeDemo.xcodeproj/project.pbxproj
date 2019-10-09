@@ -20,6 +20,7 @@
 		B6354B893495F427B5D81B02 /* libPods-ReactNativeDemo-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4DB593757203AADA80B2189 /* libPods-ReactNativeDemo-tvOSTests.a */; };
 		DB5143269257B895B3178ADC /* libPods-ReactNativeDemo-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DED042A803E1642BB6AC9F19 /* libPods-ReactNativeDemo-tvOS.a */; };
 		DDC5107B4EFA2FE90110A4D9 /* libPods-ReactNativeDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CC2B48D0DA699D080E092C /* libPods-ReactNativeDemoTests.a */; };
+		F41AAE21234DB74F00BA3307 /* PromiseModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F41AAE20234DB74F00BA3307 /* PromiseModule.m */; };
 		F44580A2233E01B10040E441 /* ToastModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F44580A1233E01B10040E441 /* ToastModule.m */; };
 		F44580A3233E01B10040E441 /* ToastModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F44580A1233E01B10040E441 /* ToastModule.m */; };
 		F46E4E03233DE3D9009AFB03 /* CallbackTestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F46E4E02233DE3D9009AFB03 /* CallbackTestModule.m */; };
@@ -70,6 +71,8 @@
 		DED042A803E1642BB6AC9F19 /* libPods-ReactNativeDemo-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeDemo-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		F41AAE1F234DB74F00BA3307 /* PromiseModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PromiseModule.h; sourceTree = "<group>"; };
+		F41AAE20234DB74F00BA3307 /* PromiseModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PromiseModule.m; sourceTree = "<group>"; };
 		F44580A0233E01B10040E441 /* ToastModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToastModule.h; sourceTree = "<group>"; };
 		F44580A1233E01B10040E441 /* ToastModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToastModule.m; sourceTree = "<group>"; };
 		F46E4E01233DE3D9009AFB03 /* CallbackTestModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallbackTestModule.h; sourceTree = "<group>"; };
@@ -144,6 +147,8 @@
 				F46E4E02233DE3D9009AFB03 /* CallbackTestModule.m */,
 				F44580A0233E01B10040E441 /* ToastModule.h */,
 				F44580A1233E01B10040E441 /* ToastModule.m */,
+				F41AAE1F234DB74F00BA3307 /* PromiseModule.h */,
+				F41AAE20234DB74F00BA3307 /* PromiseModule.m */,
 			);
 			name = ReactNativeDemo;
 			sourceTree = "<group>";
@@ -574,6 +579,7 @@
 				F44580A2233E01B10040E441 /* ToastModule.m in Sources */,
 				F46E4E03233DE3D9009AFB03 /* CallbackTestModule.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				F41AAE21234DB74F00BA3307 /* PromiseModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
