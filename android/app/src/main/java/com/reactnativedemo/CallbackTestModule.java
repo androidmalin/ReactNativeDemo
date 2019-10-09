@@ -24,6 +24,9 @@ public class CallbackTestModule extends ReactContextBaseJavaModule {
         return "CallbackTestModule";
     }
 
+    //原生模块还支持一种特殊的参数——回调函数。它提供了一个函数来把返回值传回给 JavaScript
+    //原生模块通常只应调用回调函数一次。但是，它可以保存 callback 并在将来调用。
+    //请务必注意 callback 并非在对应的原生函数返回后立即被执行——注意跨语言通讯是异步的，这个执行过程会通过消息循环来进行。
     @ReactMethod
     public void measureLayout(int a, int b, Callback errorCallback, Callback successCallback) {
         try {

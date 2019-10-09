@@ -36,6 +36,8 @@ public class ToastModule extends ReactContextBaseJavaModule {
         return constants;
     }
 
+    // 要导出一个方法给 JavaScript 使用，Java 方法需要使用注解@ReactMethod。
+    // 方法的返回类型必须为void。React Native 的跨语言访问是异步进行的，所以想要给 JavaScript 返回一个值的唯一办法是使用回调函数或者发送事件
     @ReactMethod
     public void show(String message, int duration) {
         Toast toast = Toast.makeText(getReactApplicationContext(), message, duration);
