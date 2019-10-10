@@ -25,6 +25,7 @@
 		F44580A3233E01B10040E441 /* ToastModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F44580A1233E01B10040E441 /* ToastModule.m */; };
 		F46E4E03233DE3D9009AFB03 /* CallbackTestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F46E4E02233DE3D9009AFB03 /* CallbackTestModule.m */; };
 		F46E4E04233DE3D9009AFB03 /* CallbackTestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F46E4E02233DE3D9009AFB03 /* CallbackTestModule.m */; };
+		F4786BEF234F0CE000F3B1E2 /* EventModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F4786BEE234F0CE000F3B1E2 /* EventModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		F44580A1233E01B10040E441 /* ToastModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToastModule.m; sourceTree = "<group>"; };
 		F46E4E01233DE3D9009AFB03 /* CallbackTestModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallbackTestModule.h; sourceTree = "<group>"; };
 		F46E4E02233DE3D9009AFB03 /* CallbackTestModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallbackTestModule.m; sourceTree = "<group>"; };
+		F4786BED234F0CE000F3B1E2 /* EventModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventModule.h; sourceTree = "<group>"; };
+		F4786BEE234F0CE000F3B1E2 /* EventModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventModule.m; sourceTree = "<group>"; };
 		F849949C67848EBCA9F3F31F /* Pods-ReactNativeDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeDemoTests/Pods-ReactNativeDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,6 +152,8 @@
 				F44580A1233E01B10040E441 /* ToastModule.m */,
 				F41AAE1F234DB74F00BA3307 /* PromiseModule.h */,
 				F41AAE20234DB74F00BA3307 /* PromiseModule.m */,
+				F4786BED234F0CE000F3B1E2 /* EventModule.h */,
+				F4786BEE234F0CE000F3B1E2 /* EventModule.m */,
 			);
 			name = ReactNativeDemo;
 			sourceTree = "<group>";
@@ -577,6 +582,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				F44580A2233E01B10040E441 /* ToastModule.m in Sources */,
+				F4786BEF234F0CE000F3B1E2 /* EventModule.m in Sources */,
 				F46E4E03233DE3D9009AFB03 /* CallbackTestModule.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				F41AAE21234DB74F00BA3307 /* PromiseModule.m in Sources */,

@@ -20,6 +20,7 @@ public class CustomReactPackage implements ReactPackage {
         modules.add(new ToastModule(reactContext));
         modules.add(new CallbackTestModule(reactContext));
         modules.add(new PromiseModule(reactContext));
+        modules.add(new EventModule(reactContext));
         return modules;
     }
 
