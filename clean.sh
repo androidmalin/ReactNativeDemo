@@ -5,10 +5,10 @@
 #yarn cache dir: prints out the path of your cached directory
 rm package-lock.json
 rm yarn.lock
-rm -rf node_modules
+#rm -rf node_modules
 rm -rf ~/.rncache
 rm -rf ios/Pods
-yarn cache clean
+#yarn cache clean
 yarn install
 cd ios
 pod install
