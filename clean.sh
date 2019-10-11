@@ -3,8 +3,9 @@
 #yarn cache clean: cleans that directory
 #yarn cache list: shows the list of cached dependencies
 #yarn cache dir: prints out the path of your cached directory
+
 rm package-lock.json
-rm yarn.lock
+#rm yarn.lock
 #rm -rf node_modules
 rm -rf ~/.rncache
 rm -rf ios/Pods
