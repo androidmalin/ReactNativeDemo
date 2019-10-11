@@ -28,10 +28,10 @@ public class CallbackTestModule extends ReactContextBaseJavaModule {
     //原生模块通常只应调用回调函数一次。但是，它可以保存 callback 并在将来调用。
     //请务必注意 callback 并非在对应的原生函数返回后立即被执行——注意跨语言通讯是异步的，这个执行过程会通过消息循环来进行。
     @ReactMethod
-    public void measureLayout(int a, int b, Callback errorCallback, Callback successCallback) {
+    public void callbackNumberAddFunction(int a, int b, Callback errorCallback, Callback successCallback) {
         try {
-            Log.d(TAG, "JS调用Android Native方法measureLayout():参数为" + "a:" + a + " b:" + b);
-            successCallback.invoke(6666, b, a, b);
+            Log.d(TAG, "JS调用Android Native方法callbackFunction():参数为" + "a:" + a + " b:" + b);
+            successCallback.invoke(a + b);
         } catch (IllegalViewOperationException e) {
             errorCallback.invoke(e.getMessage());
         }

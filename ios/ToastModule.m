@@ -21,4 +21,18 @@ RCT_EXPORT_METHOD(show:(NSString *)name: (NSInteger)b){
   });
 }
 
+- (NSDictionary *)constantsToExport
+{
+  return @{ @"SHORT":[NSNumber numberWithInt:1],
+            @"LONG":[NSNumber numberWithInt:2] };
+}
+
+//If you override - constantsToExport then you should also implement + requiresMainQueueSetup to 
+//let React Native know if your module needs to be initialized on the main thread. 
+//Otherwise you will see a warning that in the future your module may be initialized on a background thread unless you explicitly opt out with + requiresMainQueueSetup:
++ (BOOL)requiresMainQueueSetup
+{
+  return YES;  // only do this if your module initialization relies on calling UIKit!
+}
+
 @end

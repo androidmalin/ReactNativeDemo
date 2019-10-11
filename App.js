@@ -44,63 +44,31 @@ export default class ButtonBasics extends Component {
     subscription.remove();
   }
   _onPressButton() {
-    CallbackTestModule.measureLayout(
+    CallbackTestModule.callbackNumberAddFunction(
       100,
       1000,
       msg => {
         console.log('Native回调给JS' + msg);
         ToastModule.show(msg, ToastModule.SHORT);
       },
-      (x, y, a, b) => {
-        if (x === 6666) {
-          console.log(
-            'Android Native回调给JS' +
-              'x:' +
-              x +
-              ' ' +
-              'y:' +
-              y +
-              ' ' +
-              'a:' +
-              a +
-              ' ' +
-              'b:' +
-              b,
-          );
-        } else if (x === 7777) {
-          console.log(
-            'iOS Native回调给JS' +
-              'x:' +
-              x +
-              ' ' +
-              'y:' +
-              y +
-              ' ' +
-              'a:' +
-              a +
-              ' ' +
-              'b:' +
-              b,
-          );
+      result => {
+        if (Platform.OS === 'android') {
+          console.log('android callbackNumberAddFunction result:' + result);
+          ToastModule.show('android result:' + result, ToastModule.SHORT);
+        } else if (Platform.OS === 'ios') {
+          console.log('ios callbackNumberAddFunction result:' + result);
+          ToastModule.show('ios result:' + result, ToastModule.LONG);
         } else {
           console.log(
-            '未知 Native 回调给JS' +
-              'x:' +
-              x +
-              ' ' +
-              'y:' +
-              y +
-              ' ' +
-              'a:' +
-              a +
-              ' ' +
-              'b:' +
-              b,
+            'unkown platform callbackNumberAddFunction result:' + result,
+          );
+          ToastModule.show(
+            'unkown platform result:' + result,
+            ToastModule.SHORT,
           );
         }
         promiseModuleFunction();
         promiseModuleFunction2();
-        ToastModule.show(x + ':' + x + ':' + a + ':' + b, 1);
       },
     );
   }
