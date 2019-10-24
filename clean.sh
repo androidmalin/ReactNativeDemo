@@ -12,6 +12,8 @@ rm -rf ios/Pods
 #yarn cache clean
 yarn install
 cd ios
+#could not build module 'Foundation'
+#rm -rf /Users/malin/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/*
 pod install
 cd ..
 cd android
