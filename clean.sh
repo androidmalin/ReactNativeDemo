@@ -10,6 +10,11 @@ rm package-lock.json
 rm -rf ~/.rncache
 rm -rf ios/Pods
 #yarn cache clean
+
+#upgrade dependencies
+#yarn upgrade-interactive --latest
+#需要手动选择升级的依赖包，按空格键选择，a 键切换所有，i 键反选选择
+
 yarn install
 cd ios
 #could not build module 'Foundation'
