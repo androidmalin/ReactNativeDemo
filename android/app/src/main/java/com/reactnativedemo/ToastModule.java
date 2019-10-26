@@ -1,5 +1,7 @@
 package com.reactnativedemo;
 
+import android.os.Looper;
+import android.util.Log;
 import android.view.Gravity;
 import android.widget.Toast;
 
@@ -50,6 +52,7 @@ public class ToastModule extends ReactContextBaseJavaModule {
     // 方法的返回类型必须为void。React Native 的跨语言访问是异步进行的，所以想要给 JavaScript 返回一个值的唯一办法是使用回调函数或者发送事件
     @ReactMethod
     public void show(String message, int duration) {
+        Log.d("ToastModule", "show()==>UI thread:" + (Looper.getMainLooper() == Looper.myLooper()));
         Toast toast = Toast.makeText(getReactApplicationContext(), message, duration);
         toast.setGravity(Gravity.CENTER, 0, 0);
         toast.show();

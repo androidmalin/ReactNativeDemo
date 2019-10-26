@@ -137,7 +137,7 @@ android {
         versionCode 1
         versionName "1.0"
         // sdk/ndk
-        android.ndkVersion "20.0.5594570"
+        android.ndkVersion "21.0.5935234"
     }
     splits {
         abi {
