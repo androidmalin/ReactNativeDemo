@@ -19,6 +19,9 @@ yarn install
 cd ios
 #could not build module 'Foundation'
 #rm -rf /Users/malin/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/*
+rm -rf /Users/malin/Library/Developer/Xcode/DerivedData/ReactNativeDemo-*
+rm -rf ios/build
+rm -rf ios/Pods
 pod install
 cd ..
 cd android
