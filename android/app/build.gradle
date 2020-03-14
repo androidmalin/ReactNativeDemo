@@ -231,8 +231,8 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:0.61.5"  // From node_modules
-    implementation "com.squareup.okhttp3:okhttp:4.2.2"
-    implementation 'com.squareup.okhttp3:okhttp-urlconnection:4.2.2'
+    implementation "com.squareup.okhttp3:okhttp:4.4.1"
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:4.4.1'
 
     if (enableHermes) {
         def hermesPath = "../../node_modules/hermes-engine/android/";

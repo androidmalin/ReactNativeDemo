@@ -4,6 +4,9 @@
 #yarn cache list: shows the list of cached dependencies
 #yarn cache dir: prints out the path of your cached directory
 
+#npm check
+#npm-check -u
+
 rm package-lock.json
 #rm yarn.lock
 #rm -rf node_modules
